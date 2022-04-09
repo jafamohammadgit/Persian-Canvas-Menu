@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "mikhak";
+  src: url(/assets/font/Mikhak/Mikhak-Articgroup-ir/mikhak/Mikhak-Black.ttf)
+      format(ttf),
+    url(/assets/font/Mikhak/Mikhak-Articgroup-ir/mikhak/Mikhak-Bold.ttf)
+      format(ttf),
+    url(/assets/font/Mikhak/Mikhak-Articgroup-ir/mikhak/Mikhak-Light.ttf)
+      format(ttf),
+    url(/assets/font/Mikhak/Mikhak-Articgroup-ir/mikhak/Mikhak-Medium.ttf)
+      format(ttf),
+    url(/assets/font/Mikhak/Mikhak-Articgroup-ir/mikhak/Mikhak-Thin.ttf)
+      format(ttf),
+    url(/assets/font/Mikhak/Mikhak-Articgroup-ir/mikhak/Mikhak-VF.ttf)
+      format(ttf);
+}
+@font-face {
+  font-family: "vazir";
+  src: url(../font/vazir/Vazir-Medium.eot) format("eot"),
+    url(../font/vazir/Vazir-Medium.otf) format("otf"),
+    url(../font/vazir/Vazir-Medium.ttf) format("ttf"),
+    url(../font/vazir/Vazir-Medium.woff) format("woff"),
+    url(../font/vazir/Vazir-Medium.woff2) format("woff2");
+}

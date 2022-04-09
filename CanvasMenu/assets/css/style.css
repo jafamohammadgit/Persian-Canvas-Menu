@@ -1,0 +1,182 @@
+@import url(./_font.css);
+@import url(./_grid.css);
+
+body {
+  overflow-x: hidden;
+}
+
+.menu {
+  background-color: darkblue;
+  height: 50px;
+  width: 100%;
+  float: right;
+  position: fixed;
+  right: 0;
+  z-index: 999;
+  transition: all 1s ease;
+}
+
+.menu .top-menu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  flex-direction: row-reverse;
+  padding: 0 30px;
+  transition: all 0.5s;
+}
+
+.menu .top-menu div:nth-child(1) i {
+  padding: 5px;
+  font-size: 25px;
+}
+
+.menu .top-menu div:nth-child(1) i:hover {
+  color: rgb(141, 141, 141);
+  cursor: pointer;
+}
+
+.menu .top-menu div:nth-child(2) h1 {
+  font-size: 19px;
+  font-family: mikhak;
+}
+
+.menu .canvas-menu {
+  position: absolute;
+  top: 0;
+  left: -15%;
+  z-index: 100;
+  height: 100vh;
+  background-color: darkblue;
+  width: 15%;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  direction: ltr;
+}
+
+.menu .canvas-menu .menu-logo {
+  margin: -20px 0 0 0;
+}
+
+.menu .canvas-menu .canvas-menu-title h1 {
+  margin: -20px 0 25px 0;
+  color: #fff;
+  font-family: mikhak;
+  font-size: 21px;
+  font-weight: 1000;
+}
+
+.menu .canvas-menu ul {
+  width: 100%;
+  text-align: center;
+}
+
+.menu .canvas-menu ul a {
+  display: block;
+  width: 100%;
+  color: #efff;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.menu .canvas-menu ul a li {
+  font-size: 15px;
+  font-family: vazir !important;
+  z-index: 10;
+  color: #fff;
+  position: relative;
+}
+
+.menu .canvas-menu ul a div {
+  position: absolute;
+  background-color: #d96d0c;
+  height: 100%;
+  top: 0;
+  z-index: 9;
+  border-radius: 20% 100%;
+  width: 0;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.01, 0.01, 0.42, 0.96);
+}
+
+.menu .canvas-menu a:hover div {
+  width: 100%;
+  border-radius: 0;
+}
+
+.menu .canvas-menu ul a {
+  position: relative;
+  font-family: mikhak;
+  border-bottom: 1px solid #efefefc7;
+  font-weight: 500;
+  font-family: vazir;
+  font-size: 15px;
+  padding: 15px 0;
+}
+
+.social-media {
+  margin-top: 35px;
+}
+
+.social-media a {
+  position: relative;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #d96d0c;
+}
+
+.social-media a:hover {
+  background-color: #d96d0c;
+}
+
+.social-media a:hover i {
+  color: #fff;
+}
+
+.social-media a div {
+  width: 100%;
+  height: 10px;
+  background-color: red;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+}
+
+.main {
+  border: 1px solid black;
+  width: 100%;
+  height: auto;
+  float: right;
+  transition: width 1s ease;
+}
+
+.main-active {
+  width: 85%;
+  transition: width 0.5s;
+}
+
+.active-canvas {
+  width: 85%;
+  right: 0;
+  float: right;
+  transition: all 0.5s ease;
+}
+
+.active-menu {
+  transition: all 0.5s ease;
+  left: -18% !important;
+  width: 18% !important;
+}
+
+.my-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

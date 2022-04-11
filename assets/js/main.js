@@ -1,14 +1,15 @@
 $(document).ready(function () {
-  $("#bar").click(function () {
-    $(".menu").toggleClass("active-canvas");
-    $(".main .main-overlay").toggleClass("main-overlay-active");
-    $(".main").toggleClass("main-active");
-    $(".canvas-menu").toggleClass("active-menu");
+  $(".nav-toggle").click(function () {
+    $(".sidebar").toggleClass("active-nav");
+    $(".page-content").toggleClass("");
+    $("#overlay").toggleClass("overlay-active");
   });
-  $(".main").click(function () {
-    $(".menu").removeClass("active-canvas");
-    $(".main .main-overlay").removeClass("main-overlay-active");
-    $(".main").removeClass("main-active");
-    $(".canvas-menu").removeClass("active-menu");
+  $("#overlay").click(function () {
+    $(".sidebar").removeClass("active-nav");
+    $(".page-content").removeClass("");
+    $("#overlay").removeClass("overlay-active");
+  });
+  $(".toggle-nav").click(function () {
+    $(this).toggleClass("ul-active");
   });
 });
